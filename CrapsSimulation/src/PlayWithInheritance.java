@@ -16,7 +16,7 @@ public class PlayWithInheritance
 	public static int DYNAMIC_METHOD_LOOKUP = 5;
 	public static int OVERRIDING_STATIC = 6;
 
-	public static int RUN_EXAMPLE = 3; // change below to run different methods
+	public static int RUN_EXAMPLE = 6; // change below to run different methods
 										// thus exploring different behaviors
 
 	public static void main(String[] args)
@@ -91,6 +91,12 @@ public class PlayWithInheritance
 		{
 			// your [H2-9] code goes here
 			// Here we go ...
+			
+			Die die;
+			
+			die = new CrookedDie1();
+			
+			StdOut.println(die.testStatic());
 		}
 
 		StdOut.println();

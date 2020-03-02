@@ -18,9 +18,17 @@ class CrapsSimulationTest
 	}
 
 	@Test
-	void test()
+	void test_static1()
 	{
-		fail("Not yet implemented");
+		Die die = new CrookedDie1();
+		assertEquals("Die.testStatic()", die.testStatic());
+	}
+	
+	@Test
+	void test_static2()
+	{
+		CrookedDie1 die = new CrookedDie1();
+		assertEquals("CrookedDie1.testStatic()", die.testStatic());
 	}
 
 }
